@@ -1,14 +1,29 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-    <head>
-        <title>Learning enough javascript</title>
-        <meta charset="utf-8">
-        <script>
-            alert("hello JavaScript!");
-        </script>
-    </head>
-    <body>
-        <h1>Hello, world!</h1>
-        <p>This page includes an alert written in JavaScript.</p>
-    </body>
+  <head>
+    <title>Learning enough javascript</title>
+    <meta charset="utf-8" />
+    <script>
+      function dayName(date) {
+        const daysOfTheWeek = [
+          "Sunday",
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday",
+        ];
+        return daysOfTheWeek[date.getDay()];
+      }
+
+      let now = Date();
+      alert("hello JavaScript! Happy ${dayName(now)}");
+    </script>
+  </head>
+  <body>
+    <h1>Hello, world!</h1>
+    <p>This page includes an alert written in JavaScript.</p>
+  </body>
 </html>
+
